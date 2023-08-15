@@ -5,9 +5,14 @@ function findAge()
     if(validate(dateImp,currDate))
     {
     let age=currDate.getFullYear()-parseInt(dateImp.split('-')[0]);
+    let mnth=currDate.getMonth()-parseInt(dateImp.split('-')[1])
+    if(mnth<0||
+        mnth==0&&(currDate.getDate()<dateImp.split('-')[2]))
+        {
+            age--;
+        }
     let span=document.getElementsByTagName('span')[0];
     span.textContent=`Your age is ${age} years`;
-    dateImp.value='12-12-2000';
     }
     else{
         alert('Please enter correct Date of Birth');
