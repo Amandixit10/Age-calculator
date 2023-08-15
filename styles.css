@@ -1,0 +1,50 @@
+body{
+    background-color: gainsboro;
+    overflow: hidden;
+}
+.container{
+    border:1px solid black;
+    width:500px;
+    background-color: rgb(243, 228, 141);
+    border-radius: 10px;
+margin:200px;
+margin-left:400px;
+}
+#title{
+    text-align: center;
+}
+#label{
+    padding-left:170px;
+}
+
+#date{
+    width:50%;
+ margin-left:120px;
+ margin-top:10px;
+}
+button{
+    margin-top:20px;
+    margin-left:200px;
+    margin-bottom:20px;
+    cursor: pointer;
+    background-color: rgb(146, 241, 165);
+    border: none;
+    border-radius: 5px;
+    padding:10px;
+    box-shadow: 2px 2px 2px black;
+}
+button:active{
+    transform: translate(2px,2px);
+    box-shadow: none;
+}
+
+button:hover{
+    background-color: rgb(88, 235, 117); 
+}
+span{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left:150px;
+   margin-bottom:20px;
+   display: block;
+}
